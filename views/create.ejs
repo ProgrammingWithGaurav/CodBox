@@ -1,0 +1,45 @@
+<%- include('./partials/header.ejs') %>
+    <%- include('./partials/nav.ejs') %>
+        <div class="container">
+            <form class="my-3" action="/codeBoxes" method="POST">
+                <!-- User Name -->
+                <div class="name my-2">
+                    <label for="name" class="h6">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control"
+                        required>
+                </div>
+                <!-- Code Description -->
+                <div class="name my-2">
+                    <label for="description" class="h6">Description</label>
+                    <input type="text" name="description" id="description" placeholder="Enter your code description" class="form-control"
+                        required>
+                </div>
+                <!-- Language -->
+                <div class="langauge my-2">
+                    <label for="language" class="h6">Langauge</label>
+                    <select name="language" id="language" class="form-control">
+                        <option value="python">python</option>
+                        <option value="javascript">javascript</option>
+                        <option value="java">java</option>
+                        <option value="php">php</option>
+                        <option value="c">c</option>
+                        <option value="c++">c++</option>
+                    </select>
+                </div>
+                <!-- Code -->   
+                <div class="code my-2">
+                    <div>
+                        <label for="code" class="h6">Code</label>
+                        <textarea type="text" name="code" id="code" class="form-control" rows="8"
+                            placeholder="Paste your code here or open the file" required></textarea>
+                    </div>
+                        <div class="p-2 border border-primary border-2 rounded">
+                            <input type="file" class="form-control" id="file">
+                        </div>
+                </div>
+                <button class="btn btn-primary">submit</button>
+            </form>
+        </div>
+        
+<script src="./js/upload.js"></script> 
+<%- include('./partials/footer.ejs') %>

@@ -1,0 +1,28 @@
+<%- include('./partials/header.ejs') %> 
+<%- include('./partials/nav.ejs') %> 
+<div class="container my-4">
+    <div class="boxes d-flex flex-wrap my-2">
+        <% if(code.length > 0) { %> 
+        <% code.forEach(code => { %> 
+            <a href="/details/<%= code.id %>"> 
+                <div class="box mx-3">
+                    <div class="language-logo">
+                        <img src="./img/<%= code.language %>.png">
+                        <h3 class="text-center"><%= code.language %></h3>
+                    </div>
+                    <div class="description">
+                        <small class="text-secondary sm"><%= code.createdAt.toLocaleString() %> </small>
+                        <p>
+                            <%= code.description %> 
+                        </p>
+                            
+                    </div>
+                </div>
+            </a>
+        <% }) %> 
+        <% } else { %> 
+            <h2 class="text-danger">No Code Boxes Found</h2>
+        <% } %> 
+    </div>
+</div>
+<%- include('./partials/footer.ejs') %> 

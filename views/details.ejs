@@ -1,0 +1,10 @@
+<%- include('./partials/header.ejs') %> 
+<%- include('./partials/nav.ejs') %> 
+<div class="container my-3">
+    <div class="title">
+        <h3 class="text-danger ">- By <%= code.name %> </h3>
+    </div>
+        <pre class="language-<%= code.language %>"><code><%= code.code %></code></pre>         
+    </div>
+</div>
+<%- include('./partials/footer.ejs') %> 

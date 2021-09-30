@@ -1,0 +1,54 @@
+/* utility classes */
+.sm{
+    font-size: 11px;
+}
+
+/* Code Box */
+.box{
+    width: 230px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px 15px;
+    box-shadow: 1px 1px 7px 2px rgb(179, 179, 179);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 100ms ease-in-out;
+}
+
+.box:hover{
+    box-shadow: 1px 1px 15px 3px rgb(179, 179, 179);
+    transform: scale(1.05);
+}
+
+.box .language-logo img{
+    width: 140px;
+}
+
+
+.box .description{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    font-family: cursive;
+}
+
+/* 404 page */
+.body{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img.logo{
+    width: 200px;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
