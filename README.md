@@ -36,6 +36,7 @@ To install project run the command in the terminal
 
 ## Features
 
+- upload file
 - Code copy to clipboard button
 - see others codeboxes
   

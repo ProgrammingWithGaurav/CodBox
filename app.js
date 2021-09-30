@@ -1,10 +1,15 @@
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config()
+}
+
 const express = require('express')
 const mongoose = require('mongoose')
 const Code = require('./models/code.js')
 const app = express()
 
 // connect to the mongo database
-mongoose.connect('mongodb://localhost/')
+mongoose.connect(process.env.DATABASE_URL,
+    { useNewUrlParser: true })
 
 // middlewares
 app.use(express.urlencoded({ extended: true }))
@@ -69,7 +74,7 @@ app.get('/about', (req, res)=>{
     res.render('about', { title: 'About' })
 })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
 
 app.use((req, res)=>{
     res.render("404", { title: '404 Page not found'})
