@@ -38,8 +38,9 @@ To install project run the command in the terminal
 
 - Code copy to clipboard button
 - see others codeboxes
-
-
-
-
   
+If you want update this project you can do by adding features like:
+- multiple files support
+- add more language support
+
+#### I am regularly updating this project by adding some more features. 
