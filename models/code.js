@@ -19,4 +19,4 @@ const codeSchema = mongoose.Schema({
     }
 }, { timestamps: true })
 
-module.exports = mongoose.model('codeBoxes', codeSchema)
+module.exports = mongoose.model('codeboxes', codeSchema)
