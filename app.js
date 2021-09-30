@@ -4,7 +4,7 @@ const Code = require('./models/code.js')
 const app = express()
 
 // connect to the mongo database
-mongoose.connect('mongodb://localhost/Projects')
+mongoose.connect('mongodb://localhost/')
 
 // middlewares
 app.use(express.urlencoded({ extended: true }))
